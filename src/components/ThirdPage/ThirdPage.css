@@ -1,0 +1,171 @@
+.thirdpage {
+  position: relative;
+  padding: 150px 40px 200px;
+  margin-bottom: 100px;
+  background: #202229;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirdpage::before,
+.thirdpage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: inherit;
+}
+
+.thirdpage::before {
+  top: -20px;
+  height: 150px;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+}
+
+.thirdpage::after {
+  bottom: -20px;
+  height: 180px;
+  transform: skewY(-3deg);
+  transform-origin: bottom right;
+}
+
+.thirdpage-header {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.thirdpage-header h1 {
+  font-size: 54px;
+  margin: 15px 0 10px;
+  color: white;
+  position: relative;
+}
+
+.thirdpage-header .highlight {
+  color: #6200ea;
+}
+
+.thirdpage-header p {
+  font-size: 22px;
+  color: white;
+}
+
+.jason {
+  width: 30px;
+  border-radius: 20px;
+}
+
+.groove-btn {
+  margin-top: 20px;
+  width: 50px;
+}
+
+.groove-btn-right {
+  margin-left: 10px;
+}
+
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 600px;
+  text-align: left;
+}
+
+.testimonial-head {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.testimonial img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+small {
+  display: block;
+}
+
+.testimonial h3 {
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .thirdpage::before,
+  .thirdpage::after {
+    top: -20px;
+    height: 70px;
+    transform: skewY(-2deg);
+  }
+
+  .testimonial-section,
+  .testimonial,
+  .thirdpage {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .thirdpage-header {
+    text-align: center;
+  }
+
+  .thirdpage-header h1 {
+    font-size: 36px;
+  }
+
+  .thirdpage-header p {
+    font-size: 18px;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    margin-top: 100px;
+  }
+
+  .testimonial img {
+    margin: 0 auto 10px;
+  }
+
+  .testimonial h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .thirdpage-header h1 {
+    font-size: 28px;
+  }
+
+  .thirdpage-header p {
+    font-size: 16px;
+  }
+
+  .testimonial {
+    margin-top: 100px;
+  }
+
+  .testimonial h3 {
+    font-size: 1em;
+  }
+
+  .testimonial img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-section {
+    padding: 10px;
+  }
+}

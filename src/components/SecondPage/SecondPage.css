@@ -1,0 +1,325 @@
+.secondpage {
+  position: relative;
+  padding: 150px;
+  background: #edefff;
+  margin: 0 auto;
+}
+
+.secondpage::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: inherit;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+}
+
+.App-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.block {
+  display: inline;
+  margin-right: 10px;
+}
+
+.block > span {
+  font-size: 16px;
+}
+
+.block > img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.secondpage-header > h1 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+  font-size: 54px;
+}
+
+.profile-stats {
+  margin-bottom: 150px;
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 350px;
+}
+
+.skill-1 {
+  margin-right: 10px;
+}
+
+.skill-3 {
+  display: block;
+}
+
+.category {
+  margin-bottom: 40px;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.category > p {
+  margin-bottom: 5px;
+}
+
+.category-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  margin-left: 15px;
+  text-align: center;
+  flex: 1;
+}
+
+.category-item > p {
+  text-align: center;
+}
+
+.category-img {
+  max-width: 60px;
+}
+
+.more {
+  font-weight: bold;
+}
+
+.img-background {
+  position: relative;
+  border-radius: 30px;
+  background: #f6f6f6;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.explore-more {
+  margin-top: -30px;
+}
+
+.explore-more-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.explore-more-button > img {
+  width: 54px;
+}
+
+.explore-more-text {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+@media (max-width: 1440px) {
+  .secondpage {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .App-flex {
+    gap: 150px;
+  }
+
+  .secondpage {
+    padding: 100px;
+  }
+
+  .secondpage-header > h1 {
+    font-size: 48px;
+  }
+
+  .profile-stats {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .App-flex {
+    gap: 100px;
+    flex-direction: row;
+  }
+
+  .secondpage {
+    padding: 100px;
+  }
+
+  .secondpage-header > h1 {
+    font-size: 42px;
+  }
+
+  .profile-title {
+    font-size: 22px;
+  }
+
+  .img-background {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-stats {
+    margin-bottom: 80px;
+  }
+
+  .category {
+    padding: 1px;
+  }
+
+  .category-item {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .category-img {
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondpage {
+    padding: 60px;
+  }
+
+  .secondpage-header > h1 {
+    font-size: 36px;
+  }
+
+  .profile-title {
+    font-size: 20px;
+  }
+
+  .profile-stats {
+    margin-bottom: 60px;
+  }
+
+  .App-flex {
+    gap: 80px;
+    flex-direction: column;
+  }
+
+  .category-items,
+  .profile-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-item {
+    margin-bottom: 20px;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .explore-more {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-more > button {
+    margin-bottom: 10px;
+  }
+
+  .explore-more-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondpage {
+    padding: 40px;
+  }
+
+  .secondpage-header > h1 {
+    font-size: 30px;
+  }
+
+  .profile-title {
+    font-size: 18px;
+  }
+
+  .profile-stats {
+    margin-bottom: 40px;
+  }
+
+  .App-flex {
+    gap: 50px;
+  }
+
+  .explore-more-text {
+    font-size: 18px;
+  }
+
+  .img-background {
+    width: 80px;
+    height: 80px;
+  }
+
+  .explore-more-button > img {
+    width: 40px;
+  }
+
+  .category-img {
+    max-width: 50px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .secondpage {
+    padding: 20px;
+  }
+
+  .secondpage-header > h1 {
+    font-size: 24px;
+  }
+
+  .profile-title {
+    font-size: 16px;
+  }
+
+  .profile-stats {
+    margin-bottom: 20px;
+  }
+
+  .App-flex {
+    gap: 30px;
+  }
+
+  .explore-more-text {
+    font-size: 16px;
+  }
+
+  .img-background {
+    width: 60px;
+    height: 60px;
+  }
+
+  .explore-more-button > img {
+    width: 30px;
+  }
+}

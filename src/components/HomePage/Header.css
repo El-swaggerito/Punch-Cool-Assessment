@@ -1,0 +1,15 @@
+.head {
+  margin-top: 200px;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.head h1 {
+  font-size: 54px;
+  margin-bottom: 1rem;
+}
+
+.head p {
+  font-size: 1.25rem;
+  color: #6c757d;
+}

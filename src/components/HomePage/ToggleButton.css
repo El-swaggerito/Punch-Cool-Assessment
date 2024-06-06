@@ -1,0 +1,20 @@
+.toggle-button {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.option {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.option.active {
+  background-color: #c8f8c8;
+  font-weight: bold;
+}
