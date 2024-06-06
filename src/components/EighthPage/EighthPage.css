@@ -48,6 +48,7 @@
 }
 
 .eighthpage-header h1 {
+  position: relative;
   font-size: 56px;
   margin-bottom: 20px;
   color: white;
